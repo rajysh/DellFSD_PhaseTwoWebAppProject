@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YpeV0St+8okd0rjyd/WIzN1fLBtazdfMx6BcVMPMOybXh7m4IbuiPvx9UlU63ljyXN+n0LXpNQUOyNxAOO4Bmg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rajesh_b2\\OneDrive - Dell Technologies\\Work\\FSD\\Projects\\PhaseTwo\\4_MVC5\\PhaseTwo_Webapplications\\PhaseTwo_Webapplications\\PhaseTwo_Webapplications.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rajesh_b2\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.9\\microsoft.netcore.app.host.win-x64.5.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
