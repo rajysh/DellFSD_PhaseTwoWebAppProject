@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rajesh_b2\\OneDrive - Dell Technologies\\Work\\FSD\\Projects\\PhaseTwo\\4_MVC5\\PhaseTwo_Webapplications\\Day1_WebFundamentals\\Day1_WebFundamentals.csproj": {}
+    "C:\\Users\\rajesh_b2\\OneDrive - Dell Technologies\\Work\\FSD\\Projects\\PhaseTwo\\4_MVC5\\PhaseTwo_WebApplications\\Day1_WebFundamentals\\Day1_WebFundamentals.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rajesh_b2\\OneDrive - Dell Technologies\\Work\\FSD\\Projects\\PhaseTwo\\4_MVC5\\PhaseTwo_Webapplications\\Day1_WebFundamentals\\Day1_WebFundamentals.csproj": {
+    "C:\\Users\\rajesh_b2\\OneDrive - Dell Technologies\\Work\\FSD\\Projects\\PhaseTwo\\4_MVC5\\PhaseTwo_WebApplications\\Day1_WebFundamentals\\Day1_WebFundamentals.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rajesh_b2\\OneDrive - Dell Technologies\\Work\\FSD\\Projects\\PhaseTwo\\4_MVC5\\PhaseTwo_Webapplications\\Day1_WebFundamentals\\Day1_WebFundamentals.csproj",
+        "projectUniqueName": "C:\\Users\\rajesh_b2\\OneDrive - Dell Technologies\\Work\\FSD\\Projects\\PhaseTwo\\4_MVC5\\PhaseTwo_WebApplications\\Day1_WebFundamentals\\Day1_WebFundamentals.csproj",
         "projectName": "Day1_WebFundamentals",
-        "projectPath": "C:\\Users\\rajesh_b2\\OneDrive - Dell Technologies\\Work\\FSD\\Projects\\PhaseTwo\\4_MVC5\\PhaseTwo_Webapplications\\Day1_WebFundamentals\\Day1_WebFundamentals.csproj",
+        "projectPath": "C:\\Users\\rajesh_b2\\OneDrive - Dell Technologies\\Work\\FSD\\Projects\\PhaseTwo\\4_MVC5\\PhaseTwo_WebApplications\\Day1_WebFundamentals\\Day1_WebFundamentals.csproj",
         "packagesPath": "C:\\Users\\rajesh_b2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rajesh_b2\\OneDrive - Dell Technologies\\Work\\FSD\\Projects\\PhaseTwo\\4_MVC5\\PhaseTwo_Webapplications\\Day1_WebFundamentals\\obj\\",
+        "outputPath": "C:\\Users\\rajesh_b2\\OneDrive - Dell Technologies\\Work\\FSD\\Projects\\PhaseTwo\\4_MVC5\\PhaseTwo_WebApplications\\Day1_WebFundamentals\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
