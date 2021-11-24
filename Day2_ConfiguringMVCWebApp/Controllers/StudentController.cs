@@ -22,5 +22,7 @@ namespace Day2_ConfiguringMVCWebApp.Controllers
             ViewBag.StudentList = students;
             return View();
         }
+
+
     }
 }

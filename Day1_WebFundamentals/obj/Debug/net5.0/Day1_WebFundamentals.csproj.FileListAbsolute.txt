@@ -8,7 +8,6 @@ C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_WebFundamentals\bin\Debug\net5.0\ref\Day1_WebFundamentals.dll
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_WebFundamentals\bin\Debug\net5.0\Day1_WebFundamentals.pdb
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_WebFundamentals\bin\Debug\net5.0\Day1_WebFundamentals.Views.dll
-C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_WebFundamentals\obj\Debug\net5.0\Day1_WebFundamentals.csproj.AssemblyReference.cache
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_WebFundamentals\obj\Debug\net5.0\Day1_WebFundamentals.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_WebFundamentals\obj\Debug\net5.0\Day1_WebFundamentals.AssemblyInfoInputs.cache
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_WebFundamentals\obj\Debug\net5.0\Day1_WebFundamentals.AssemblyInfo.cs

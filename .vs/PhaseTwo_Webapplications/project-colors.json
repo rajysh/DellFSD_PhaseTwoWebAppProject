@@ -30,7 +30,22 @@
       "ProjectGuid": "a4bb30cf-401e-44eb-8df6-2229aff16f19",
       "DisplayName": "Day1_ConfiguringMVCApp",
       "ColorIndex": 4
+    },
+    "007c650b-1c0e-42db-9c5f-d436e0e3ba6a": {
+      "ProjectGuid": "007c650b-1c0e-42db-9c5f-d436e0e3ba6a",
+      "DisplayName": "Day2_ConfiguringMVCWebApplication",
+      "ColorIndex": 5
+    },
+    "e8862b99-fde0-4889-ab58-d2d3c01ab500": {
+      "ProjectGuid": "e8862b99-fde0-4889-ab58-d2d3c01ab500",
+      "DisplayName": "Day2_ConfiguringMVCWebApp",
+      "ColorIndex": 6
+    },
+    "4db4bfc7-3dc5-41ad-9484-edd5631d8a79": {
+      "ProjectGuid": "4db4bfc7-3dc5-41ad-9484-edd5631d8a79",
+      "DisplayName": "Day3_CoreMVCConcepts",
+      "ColorIndex": 7
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 8
 }

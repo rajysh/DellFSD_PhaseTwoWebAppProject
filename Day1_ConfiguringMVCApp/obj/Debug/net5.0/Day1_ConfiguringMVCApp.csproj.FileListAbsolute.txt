@@ -21,7 +21,6 @@ C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_ConfiguringMVCApp\obj\Debug\net5.0\Day1_ConfiguringMVCApp.pdb
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_ConfiguringMVCApp\obj\Debug\net5.0\Day1_ConfiguringMVCApp.genruntimeconfig.cache
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_ConfiguringMVCApp\obj\Debug\net5.0\Day1_ConfiguringMVCApp.csproj.CopyComplete
-C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_ConfiguringMVCApp\obj\Debug\net5.0\Day1_ConfiguringMVCApp.csproj.AssemblyReference.cache
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_ConfiguringMVCApp\bin\Debug\net5.0\Humanizer.dll
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_ConfiguringMVCApp\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_ConfiguringMVCApp\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -109,4 +108,3 @@ C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_ConfiguringMVCApp\obj\Debug\net5.0\Day1_ConfiguringMVCApp.Views.pdb
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_ConfiguringMVCApp\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_ConfiguringMVCApp\obj\Debug\net5.0\Razor\Views\Home\ContactPage.cshtml.g.cs
-C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_ConfiguringMVCApp\obj\Debug\net5.0\Razor\Views\Shared\_MyLayout.cshtml.g.cs

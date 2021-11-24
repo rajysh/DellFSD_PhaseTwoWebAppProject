@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@ViewBag.Message</h1>
+<div class="badge-success">
+    There are @ViewBag.StudentCount participants have joined.
+</div>
+<table class="table">
+    <thead>
+        <th>Student Id</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>
+            Gender
+        </th>
+    </thead>
+    <tbody>
+        @foreach(var item in @ViewBag.StudentList)
+        {
+            <tr>
+                <td>@item.StudentId</td>
+                <td>@item.Name</td>
+                <td>@item.City</td>
+                <td>@item.Gender</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br />
+<br />
+<a asp-controller="Student" asp-action="Details">Go to Details</a>
