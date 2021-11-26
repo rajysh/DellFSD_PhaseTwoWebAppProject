@@ -12,7 +12,15 @@ namespace Day3_CoreMVCConcepts.Controllers
 
         //    return Json(employees);
         //}
-        EmployeeRepository employeeRepository = new EmployeeRepository();
+        //EmployeeRepository employeeRepository = new EmployeeRepository();
+        IEmployeeRepository employeeRepository;
+
+        public EmployeeController(IEmployeeRepository _employeeRepository)
+        {
+            employeeRepository = _employeeRepository;
+        }
+
+
         public IActionResult Index()
         {
             EmployeeRepository employeeRepository = new EmployeeRepository();
@@ -25,6 +33,24 @@ namespace Day3_CoreMVCConcepts.Controllers
         {
             var employee = employeeRepository.GetEmployeeId(employeeId);
             return View(employee);
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Employee employee)
+        {
+            employeeRepository.AddEmployee(employee);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult GetEmployees([FromServices]IEmployeeRepository employeeRepository)
+        {
+            var employees = employeeRepository.GetEmployees();
+            return View(employees);
         }
     }
 }

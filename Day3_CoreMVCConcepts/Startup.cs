@@ -1,3 +1,4 @@
+using Day3_CoreMVCConcepts.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +25,18 @@ namespace Day3_CoreMVCConcepts
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            /**********Creating IEmployeeRepository instance as dependency injection **********/
+            services.Add(new ServiceDescriptor(typeof(IEmployeeRepository), new EmployeeRepository())); //By Default Singleton
+
+            //services.Add(new ServiceDescriptor(typeof(IEmployeeRepository), typeof(EmployeeRepository), ServiceLifetime.Singleton));
+            //services.Add(new ServiceDescriptor(typeof(IEmployeeRepository), typeof(EmployeeRepository), ServiceLifetime.Transient));
+            //services.Add(new ServiceDescriptor(typeof(IEmployeeRepository), typeof(EmployeeRepository), ServiceLifetime.Scoped));
+
+            /* Application service with extension methods */
+            //services.AddSingleton<IEmployeeRepository, EmployeeRepository>();
+            //services.AddTransient<IEmployeeRepository, EmployeeRepository>();
+            //services.AddScoped<IEmployeeRepository, EmployeeRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

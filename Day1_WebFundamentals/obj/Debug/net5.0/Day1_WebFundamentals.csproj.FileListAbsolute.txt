@@ -21,3 +21,4 @@ C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_WebFundamentals\obj\Debug\net5.0\Day1_WebFundamentals.pdb
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_WebFundamentals\obj\Debug\net5.0\Day1_WebFundamentals.genruntimeconfig.cache
 C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_WebFundamentals\obj\Debug\net5.0\Day1_WebFundamentals.csproj.CopyComplete
+C:\Users\rajesh_b2\OneDrive - Dell Technologies\Work\FSD\Projects\PhaseTwo\4_MVC5\PhaseTwo_WebApplications\Day1_WebFundamentals\obj\Debug\net5.0\Day1_WebFundamentals.csproj.AssemblyReference.cache
