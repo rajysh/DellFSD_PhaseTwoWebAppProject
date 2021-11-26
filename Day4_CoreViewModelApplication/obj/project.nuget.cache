@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "v40M3wKWs1Eb5C7jCPVZFMacpHUZ5EaZErAi3+gaRIW3jqjVsxShFN6uyWoHm1LbK/rCNuYev8kQkpqMsQ2PTw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rajesh_b2\\OneDrive - Dell Technologies\\Work\\FSD\\Projects\\PhaseTwo\\4_MVC5\\PhaseTwo_WebApplications\\Day4_CoreViewModelApplication\\Day4_CoreViewModelApplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rajesh_b2\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.9\\microsoft.netcore.app.host.win-x64.5.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

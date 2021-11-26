@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day1_ConfiguringMVCApp", "D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day2_ConfiguringMVCWebApp", "Day2_ConfiguringMVCWebApp\Day2_ConfiguringMVCWebApp.csproj", "{E8862B99-FDE0-4889-AB58-D2D3C01AB500}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day3_CoreMVCConcepts", "Day3_CoreMVCConcepts\Day3_CoreMVCConcepts.csproj", "{4DB4BFC7-3DC5-41AD-9484-EDD5631D8A79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day3_CoreMVCConcepts", "Day3_CoreMVCConcepts\Day3_CoreMVCConcepts.csproj", "{4DB4BFC7-3DC5-41AD-9484-EDD5631D8A79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day4_CoreViewModelApplication", "Day4_CoreViewModelApplication\Day4_CoreViewModelApplication.csproj", "{C5FCCB47-BC9C-47C7-9638-E860859C17BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4DB4BFC7-3DC5-41AD-9484-EDD5631D8A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DB4BFC7-3DC5-41AD-9484-EDD5631D8A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DB4BFC7-3DC5-41AD-9484-EDD5631D8A79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5FCCB47-BC9C-47C7-9638-E860859C17BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5FCCB47-BC9C-47C7-9638-E860859C17BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5FCCB47-BC9C-47C7-9638-E860859C17BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5FCCB47-BC9C-47C7-9638-E860859C17BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
