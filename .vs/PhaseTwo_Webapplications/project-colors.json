@@ -45,7 +45,22 @@
       "ProjectGuid": "4db4bfc7-3dc5-41ad-9484-edd5631d8a79",
       "DisplayName": "Day3_CoreMVCConcepts",
       "ColorIndex": 7
+    },
+    "8cf87c05-b920-450d-b40a-9da4c5e51e0b": {
+      "ProjectGuid": "8cf87c05-b920-450d-b40a-9da4c5e51e0b",
+      "DisplayName": "Day4_CoreViewModelApplication",
+      "ColorIndex": 8
+    },
+    "c5fccb47-bc9c-47c7-9638-e860859c17bf": {
+      "ProjectGuid": "c5fccb47-bc9c-47c7-9638-e860859c17bf",
+      "DisplayName": "Day4_CoreViewModelApplication",
+      "ColorIndex": 9
+    },
+    "188f6e92-e057-4f25-957a-445ac42e7ea9": {
+      "ProjectGuid": "188f6e92-e057-4f25-957a-445ac42e7ea9",
+      "DisplayName": "Day4_CoreSessionManagementApp",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 8
+  "NextColorIndex": 11
 }

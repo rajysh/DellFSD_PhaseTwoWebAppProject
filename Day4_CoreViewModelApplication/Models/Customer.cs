@@ -4,7 +4,7 @@
     {
         public int CustomerId {  get; set; }
         public string Name {  get; set; }
-        public string City {  get; set; }
-        public string Amount {  get; set; }
+        public string Gender {  get; set; }
+        public double Amount {  get; set; }
     }
 }
