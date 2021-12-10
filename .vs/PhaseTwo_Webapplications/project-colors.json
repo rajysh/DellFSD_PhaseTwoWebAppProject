@@ -60,7 +60,17 @@
       "ProjectGuid": "188f6e92-e057-4f25-957a-445ac42e7ea9",
       "DisplayName": "Day4_CoreSessionManagementApp",
       "ColorIndex": 10
+    },
+    "1027d838-2d5f-452f-a437-0c9363641652": {
+      "ProjectGuid": "1027d838-2d5f-452f-a437-0c9363641652",
+      "DisplayName": "Day5_CoreCodeFirstApproachApp",
+      "ColorIndex": 11
+    },
+    "3d61631a-8949-4b86-b6c4-5ba6f1e0ec9e": {
+      "ProjectGuid": "3d61631a-8949-4b86-b6c4-5ba6f1e0ec9e",
+      "DisplayName": "Day6_CoreCodeFirstApproachRelationship",
+      "ColorIndex": 12
     }
   },
-  "NextColorIndex": 11
+  "NextColorIndex": 13
 }
