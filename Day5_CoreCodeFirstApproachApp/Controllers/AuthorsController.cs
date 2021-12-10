@@ -9,23 +9,22 @@ using Day5_CoreCodeFirstApproachApp.Models;
 
 namespace Day5_CoreCodeFirstApproachApp.Controllers
 {
-    public class ManageCompaniesController : Controller
+    public class AuthorsController : Controller
     {
-        //private readonly ApplicationDBContext _context = new ApplicationDBContext();
         private readonly ApplicationDBContext _context;
 
-        public ManageCompaniesController(ApplicationDBContext context)
+        public AuthorsController(ApplicationDBContext context)
         {
             _context = context;
         }
 
-        // GET: ManageCompanies
+        // GET: Authors
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Companies.ToListAsync());
+            return View(await _context.Authors.ToListAsync());
         }
 
-        // GET: ManageCompanies/Details/5
+        // GET: Authors/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,39 +32,39 @@ namespace Day5_CoreCodeFirstApproachApp.Controllers
                 return NotFound();
             }
 
-            var company = await _context.Companies
-                .FirstOrDefaultAsync(m => m.CompanyId == id);
-            if (company == null)
+            var author = await _context.Authors
+                .FirstOrDefaultAsync(m => m.AuthorId == id);
+            if (author == null)
             {
                 return NotFound();
             }
 
-            return View(company);
+            return View(author);
         }
 
-        // GET: ManageCompanies/Create
+        // GET: Authors/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: ManageCompanies/Create
+        // POST: Authors/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CompanyId,Name,Country")] Company company)
+        public async Task<IActionResult> Create([Bind("AuthorId,Name")] Author author)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(company);
+                _context.Add(author);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(company);
+            return View(author);
         }
 
-        // GET: ManageCompanies/Edit/5
+        // GET: Authors/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -73,22 +72,22 @@ namespace Day5_CoreCodeFirstApproachApp.Controllers
                 return NotFound();
             }
 
-            var company = await _context.Companies.FindAsync(id);
-            if (company == null)
+            var author = await _context.Authors.FindAsync(id);
+            if (author == null)
             {
                 return NotFound();
             }
-            return View(company);
+            return View(author);
         }
 
-        // POST: ManageCompanies/Edit/5
+        // POST: Authors/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CompanyId,Name,Country")] Company company)
+        public async Task<IActionResult> Edit(int id, [Bind("AuthorId,Name")] Author author)
         {
-            if (id != company.CompanyId)
+            if (id != author.AuthorId)
             {
                 return NotFound();
             }
@@ -97,12 +96,12 @@ namespace Day5_CoreCodeFirstApproachApp.Controllers
             {
                 try
                 {
-                    _context.Update(company);
+                    _context.Update(author);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CompanyExists(company.CompanyId))
+                    if (!AuthorExists(author.AuthorId))
                     {
                         return NotFound();
                     }
@@ -113,10 +112,10 @@ namespace Day5_CoreCodeFirstApproachApp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(company);
+            return View(author);
         }
 
-        // GET: ManageCompanies/Delete/5
+        // GET: Authors/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -124,30 +123,30 @@ namespace Day5_CoreCodeFirstApproachApp.Controllers
                 return NotFound();
             }
 
-            var company = await _context.Companies
-                .FirstOrDefaultAsync(m => m.CompanyId == id);
-            if (company == null)
+            var author = await _context.Authors
+                .FirstOrDefaultAsync(m => m.AuthorId == id);
+            if (author == null)
             {
                 return NotFound();
             }
 
-            return View(company);
+            return View(author);
         }
 
-        // POST: ManageCompanies/Delete/5
+        // POST: Authors/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var company = await _context.Companies.FindAsync(id);
-            _context.Companies.Remove(company);
+            var author = await _context.Authors.FindAsync(id);
+            _context.Authors.Remove(author);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CompanyExists(int id)
+        private bool AuthorExists(int id)
         {
-            return _context.Companies.Any(e => e.CompanyId == id);
+            return _context.Authors.Any(e => e.AuthorId == id);
         }
     }
 }

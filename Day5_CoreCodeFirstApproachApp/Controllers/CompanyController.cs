@@ -6,7 +6,8 @@ namespace Day5_CoreCodeFirstApproachApp.Controllers
 {
     public class CompanyController : Controller
     {
-        ApplicationDBContext context = new ApplicationDBContext();
+        //ApplicationDBContext context = new ApplicationDBContext();
+        ApplicationDBContext context;
         public IActionResult Index()
         {
             var companies = context.Companies.ToList();

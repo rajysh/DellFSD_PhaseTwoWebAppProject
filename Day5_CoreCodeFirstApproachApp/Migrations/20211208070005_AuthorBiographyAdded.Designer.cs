@@ -4,14 +4,16 @@ using Day5_CoreCodeFirstApproachApp.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Day5_CoreCodeFirstApproachApp.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    partial class ApplicationDBContextModelSnapshot : ModelSnapshot
+    [Migration("20211208070005_AuthorBiographyAdded")]
+    partial class AuthorBiographyAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -84,21 +86,6 @@ namespace Day5_CoreCodeFirstApproachApp.Migrations
                     b.ToTable("Books");
                 });
 
-            modelBuilder.Entity("Day5_CoreCodeFirstApproachApp.Models.Category", b =>
-                {
-                    b.Property<int>("CategoryId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("CategoryName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CategoryId");
-
-                    b.ToTable("Categories");
-                });
-
             modelBuilder.Entity("Day5_CoreCodeFirstApproachApp.Models.Company", b =>
                 {
                     b.Property<int>("CompanyId")
@@ -138,36 +125,6 @@ namespace Day5_CoreCodeFirstApproachApp.Migrations
                     b.HasIndex("CompanyId");
 
                     b.ToTable("Employees");
-                });
-
-            modelBuilder.Entity("Day5_CoreCodeFirstApproachApp.Models.Novel", b =>
-                {
-                    b.Property<int>("NovelId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("NovelName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("NovelId");
-
-                    b.ToTable("Novels");
-                });
-
-            modelBuilder.Entity("Day5_CoreCodeFirstApproachApp.Models.NovelCategory", b =>
-                {
-                    b.Property<int>("NovelId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.HasKey("NovelId", "CategoryId");
-
-                    b.HasIndex("CategoryId");
-
-                    b.ToTable("NovelCategory");
                 });
 
             modelBuilder.Entity("Day5_CoreCodeFirstApproachApp.Models.User", b =>
@@ -236,25 +193,6 @@ namespace Day5_CoreCodeFirstApproachApp.Migrations
                     b.Navigation("Company");
                 });
 
-            modelBuilder.Entity("Day5_CoreCodeFirstApproachApp.Models.NovelCategory", b =>
-                {
-                    b.HasOne("Day5_CoreCodeFirstApproachApp.Models.Category", "Category")
-                        .WithMany("NovelCategories")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Day5_CoreCodeFirstApproachApp.Models.Novel", "Novel")
-                        .WithMany("NovelCategories")
-                        .HasForeignKey("NovelId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
-
-                    b.Navigation("Novel");
-                });
-
             modelBuilder.Entity("Day5_CoreCodeFirstApproachApp.Models.Author", b =>
                 {
                     b.Navigation("AuthorBiography");
@@ -262,19 +200,9 @@ namespace Day5_CoreCodeFirstApproachApp.Migrations
                     b.Navigation("Books");
                 });
 
-            modelBuilder.Entity("Day5_CoreCodeFirstApproachApp.Models.Category", b =>
-                {
-                    b.Navigation("NovelCategories");
-                });
-
             modelBuilder.Entity("Day5_CoreCodeFirstApproachApp.Models.Company", b =>
                 {
                     b.Navigation("Employee");
-                });
-
-            modelBuilder.Entity("Day5_CoreCodeFirstApproachApp.Models.Novel", b =>
-                {
-                    b.Navigation("NovelCategories");
                 });
 #pragma warning restore 612, 618
         }

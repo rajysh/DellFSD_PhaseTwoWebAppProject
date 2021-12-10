@@ -7,7 +7,8 @@ namespace Day5_CoreCodeFirstApproachApp.Controllers
 {
     public class CompaniesController : Controller
     {
-        ApplicationDBContext context = new ApplicationDBContext();
+        //ApplicationDBContext context = new ApplicationDBContext();
+        ApplicationDBContext context;
         // GET: CountriesController
         public ActionResult Index()
         {

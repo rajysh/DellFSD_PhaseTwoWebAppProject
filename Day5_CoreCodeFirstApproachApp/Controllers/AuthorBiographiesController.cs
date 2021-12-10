@@ -9,23 +9,23 @@ using Day5_CoreCodeFirstApproachApp.Models;
 
 namespace Day5_CoreCodeFirstApproachApp.Controllers
 {
-    public class ManageCompaniesController : Controller
+    public class AuthorBiographiesController : Controller
     {
-        //private readonly ApplicationDBContext _context = new ApplicationDBContext();
         private readonly ApplicationDBContext _context;
 
-        public ManageCompaniesController(ApplicationDBContext context)
+        public AuthorBiographiesController(ApplicationDBContext context)
         {
             _context = context;
         }
 
-        // GET: ManageCompanies
+        // GET: AuthorBiographies
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Companies.ToListAsync());
+            var applicationDBContext = _context.AuthorBiographies.Include(a => a.Author);
+            return View(await applicationDBContext.ToListAsync());
         }
 
-        // GET: ManageCompanies/Details/5
+        // GET: AuthorBiographies/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,39 +33,42 @@ namespace Day5_CoreCodeFirstApproachApp.Controllers
                 return NotFound();
             }
 
-            var company = await _context.Companies
-                .FirstOrDefaultAsync(m => m.CompanyId == id);
-            if (company == null)
+            var authorBiography = await _context.AuthorBiographies
+                .Include(a => a.Author)
+                .FirstOrDefaultAsync(m => m.AuthorBiographyId == id);
+            if (authorBiography == null)
             {
                 return NotFound();
             }
 
-            return View(company);
+            return View(authorBiography);
         }
 
-        // GET: ManageCompanies/Create
+        // GET: AuthorBiographies/Create
         public IActionResult Create()
         {
+            ViewData["AuthorId"] = new SelectList(_context.Authors, "AuthorId", "Name");
             return View();
         }
 
-        // POST: ManageCompanies/Create
+        // POST: AuthorBiographies/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CompanyId,Name,Country")] Company company)
+        public async Task<IActionResult> Create([Bind("AuthorBiographyId,Biography,DateOfBirth,Nationality,AuthorId")] AuthorBiography authorBiography)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(company);
+                _context.Add(authorBiography);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(company);
+            ViewData["AuthorId"] = new SelectList(_context.Authors, "AuthorId", "AuthorId", authorBiography.AuthorId);
+            return View(authorBiography);
         }
 
-        // GET: ManageCompanies/Edit/5
+        // GET: AuthorBiographies/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -73,22 +76,23 @@ namespace Day5_CoreCodeFirstApproachApp.Controllers
                 return NotFound();
             }
 
-            var company = await _context.Companies.FindAsync(id);
-            if (company == null)
+            var authorBiography = await _context.AuthorBiographies.FindAsync(id);
+            if (authorBiography == null)
             {
                 return NotFound();
             }
-            return View(company);
+            ViewData["AuthorId"] = new SelectList(_context.Authors, "AuthorId", "Name", authorBiography.AuthorId);
+            return View(authorBiography);
         }
 
-        // POST: ManageCompanies/Edit/5
+        // POST: AuthorBiographies/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CompanyId,Name,Country")] Company company)
+        public async Task<IActionResult> Edit(int id, [Bind("AuthorBiographyId,Biography,DateOfBirth,Nationality,AuthorId")] AuthorBiography authorBiography)
         {
-            if (id != company.CompanyId)
+            if (id != authorBiography.AuthorBiographyId)
             {
                 return NotFound();
             }
@@ -97,12 +101,12 @@ namespace Day5_CoreCodeFirstApproachApp.Controllers
             {
                 try
                 {
-                    _context.Update(company);
+                    _context.Update(authorBiography);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CompanyExists(company.CompanyId))
+                    if (!AuthorBiographyExists(authorBiography.AuthorBiographyId))
                     {
                         return NotFound();
                     }
@@ -113,10 +117,11 @@ namespace Day5_CoreCodeFirstApproachApp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(company);
+            ViewData["AuthorId"] = new SelectList(_context.Authors, "AuthorId", "AuthorId", authorBiography.AuthorId);
+            return View(authorBiography);
         }
 
-        // GET: ManageCompanies/Delete/5
+        // GET: AuthorBiographies/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -124,30 +129,31 @@ namespace Day5_CoreCodeFirstApproachApp.Controllers
                 return NotFound();
             }
 
-            var company = await _context.Companies
-                .FirstOrDefaultAsync(m => m.CompanyId == id);
-            if (company == null)
+            var authorBiography = await _context.AuthorBiographies
+                .Include(a => a.Author)
+                .FirstOrDefaultAsync(m => m.AuthorBiographyId == id);
+            if (authorBiography == null)
             {
                 return NotFound();
             }
 
-            return View(company);
+            return View(authorBiography);
         }
 
-        // POST: ManageCompanies/Delete/5
+        // POST: AuthorBiographies/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var company = await _context.Companies.FindAsync(id);
-            _context.Companies.Remove(company);
+            var authorBiography = await _context.AuthorBiographies.FindAsync(id);
+            _context.AuthorBiographies.Remove(authorBiography);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CompanyExists(int id)
+        private bool AuthorBiographyExists(int id)
         {
-            return _context.Companies.Any(e => e.CompanyId == id);
+            return _context.AuthorBiographies.Any(e => e.AuthorBiographyId == id);
         }
     }
 }
