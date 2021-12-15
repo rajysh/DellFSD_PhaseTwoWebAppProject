@@ -70,7 +70,12 @@
       "ProjectGuid": "3d61631a-8949-4b86-b6c4-5ba6f1e0ec9e",
       "DisplayName": "Day6_CoreCodeFirstApproachRelationship",
       "ColorIndex": 12
+    },
+    "c6170d93-13f4-48c7-8857-a4a9b7bcdf39": {
+      "ProjectGuid": "c6170d93-13f4-48c7-8857-a4a9b7bcdf39",
+      "DisplayName": "Day7_CoreDBFirstApproachRelApp",
+      "ColorIndex": 13
     }
   },
-  "NextColorIndex": 13
+  "NextColorIndex": 14
 }
